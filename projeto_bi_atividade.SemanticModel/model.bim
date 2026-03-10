@@ -1,0 +1,664 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"imdb_movies\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "imdb_movies",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0910ddfd-433d-410f-b976-c5b98323b42d",
+            "sourceColumn": "id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "título",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2141ce99-f80d-4296-b223-79ab681790ac",
+            "sourceColumn": "título",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c79c76ae-26f8-41e3-a64f-b059098e5f68",
+            "sourceColumn": "Ano",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Classificacao_Idade",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0ac177de-4b38-47f2-a63f-bb157961bff6",
+            "sourceColumn": "Classificacao_Idade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Avaliação_imdb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2face021-b5a7-41a0-bc03-9b2f4ab82a8f",
+            "sourceColumn": "Avaliação_imdb",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "voto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "17e94265-4d95-4a6a-a928-c1267d4f500e",
+            "sourceColumn": "voto",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Orçamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "1f99a57a-a0ee-4c15-84b3-9a488c7d7ddc",
+            "sourceColumn": "Orçamento",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Receita_bruta_mundial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "cfe54afc-3b20-487f-9435-63c5bd618976",
+            "sourceColumn": "Receita_bruta_mundial",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Receita_eua_canada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "1e6634f5-c998-469a-a0f8-27e09351f3bd",
+            "sourceColumn": "Receita_eua_canada",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Diretor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "18cd7866-b0c1-44b2-99a0-d6e10e6ff97d",
+            "sourceColumn": "Diretor",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Roteirista",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "61ed2be7-7f4e-4e14-a05f-e5b307896e6a",
+            "sourceColumn": "Roteirista",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ator_principal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9a3a4c47-8479-47aa-a07d-20bda625341c",
+            "sourceColumn": "Ator_principal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Genero",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85b1169f-83af-4afb-9c23-3d9b5d6c32c0",
+            "sourceColumn": "Genero",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "duracao em minutos (total)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "24d99850-c6e4-4c1c-a8d9-a544cf3dee07",
+            "sourceColumn": "duracao em minutos (total)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Pais_origem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc678a9e-409a-4456-8ae1-5ce68d15c720",
+            "sourceColumn": "Pais_origem",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Local_filmagem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b94177b7-6158-4767-be1a-48edca152f05",
+            "sourceColumn": "Local_filmagem",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Produtora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1bb8070e-b08a-4e48-b513-f84fb44ffbd2",
+            "sourceColumn": "Produtora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Idioma",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "75da1df2-820e-47cd-ad31-952e3aad55e3",
+            "sourceColumn": "Idioma",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Indicacoes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b64fc4bc-71a0-449c-ab3f-07f79ec53ad8",
+            "sourceColumn": "Indicacoes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Oscar",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78ab88af-8a72-4279-991f-008ff85771a6",
+            "sourceColumn": "Oscar",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Status de Crítica",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "IF(",
+              "    imdb_movies[Avaliação_imdb] >= 80,",
+              "    \"Excelente\",",
+              "    \"Comum\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "ad2d36bd-5959-4739-8d15-1b7c96682995",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "f3513022-d5ae-4e28-803a-066d5bd0eadc",
+        "partitions": [
+          {
+            "name": "imdb_movies",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\sophia.silva\\Desktop\\projeto_imdb\\filmes_nova - world_imdb_movies_top_movies_per_year.csv\"),[Delimiter=\",\", Columns=24, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type text}, {\"Column5\", type text}, {\"Column6\", type text}, {\"Column7\", type text}, {\"Column8\", type text}, {\"Column9\", type text}, {\"Column10\", type text}, {\"Column11\", type text}, {\"Column12\", type text}, {\"Column13\", type text}, {\"Column14\", type text}, {\"Column15\", type text}, {\"Column16\", type text}, {\"Column17\", type text}, {\"Column18\", type text}, {\"Column19\", type text}, {\"Column20\", type text}, {\"Column21\", type text}, {\"Column22\", type text}, {\"Column23\", type text}, {\"Column24\", type text}}),",
+                "    #\"Linhas Superiores Removidas\" = Table.Skip(#\"Tipo Alterado\",2),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(#\"Linhas Superiores Removidas\", [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"id\", type text}, {\"title\", type text}, {\"link\", type text}, {\"year\", Int64.Type}, {\"duration\", type text}, {\"rating_mpa\", type text}, {\"rating_imdb\", Int64.Type}, {\"vote\", Int64.Type}, {\"budget\", Int64.Type}, {\"gross_world_wide\", Int64.Type}, {\"gross_us_canada\", Currency.Type}, {\"gross_opening_weekend\", Int64.Type}, {\"director\", type text}, {\"writer\", type text}, {\"star\", type text}, {\"genre\", type text}, {\"country_origin\", type text}, {\"filming_location\", type text}, {\"production_company\", type text}, {\"language\", type text}, {\"captions\", type text}, {\"win\", Int64.Type}, {\"nomination\", Int64.Type}, {\"oscar\", Int64.Type}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado1\",{\"link\", \"captions\", \"gross_opening_weekend\"}),",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Colunas Removidas\", each true),",
+                "    #\"Colunas Removidas1\" = Table.RemoveColumns(#\"Linhas Filtradas\",{\"win\"}),",
+                "    #\"Duplicatas Removidas\" = Table.Distinct(#\"Colunas Removidas1\", {\"id\"}),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Duplicatas Removidas\",{{\"title\", \"título\"}, {\"year\", \"ano\"}, {\"duration\", \"duração\"}, {\"rating_imdb\", \"avaliação_imdb\"}, {\"vote\", \"voto\"}, {\"budget\", \"orçamento\"}, {\"gross_world_wide\", \"receita_bruta_mundial\"}, {\"gross_us_canada\", \"receita_eua_canada\"}, {\"director\", \"diretor\"}, {\"writer\", \"roteirista\"}, {\"star\", \"ator_principal\"}, {\"genre\", \"genero\"}, {\"country_origin\", \"pais_origem\"}, {\"filming_location\", \"local_filmagem\"}, {\"production_company\", \"produtora\"}, {\"language\", \"idioma\"}, {\"nomination\", \"indicacoes\"}, {\"rating_mpa\", \"classificacao_idade\"}}),",
+                "    #\"Tipo Alterado2\" = Table.TransformColumnTypes(#\"Colunas Renomeadas\",{{\"ano\", Int64.Type}, {\"orçamento\", Currency.Type}, {\"receita_bruta_mundial\", Currency.Type}, {\"receita_eua_canada\", Currency.Type}}),",
+                "    #\"Texto em Maiúscula\" = Table.TransformColumns(#\"Tipo Alterado2\",{{\"título\", Text.Upper, type text}}),",
+                "    #\"Colocar Cada Palavra Em Maiúscula\" = Table.TransformColumns(#\"Texto em Maiúscula\",{{\"título\", Text.Proper, type text}}),",
+                "    #\"Texto em Maiúscula1\" = Table.TransformColumns(#\"Colocar Cada Palavra Em Maiúscula\",{{\"título\", Text.Upper, type text}}),",
+                "    #\"Texto Extraído Antes do Delimitador\" = Table.TransformColumns(#\"Texto em Maiúscula1\", {{\"genero\", each Text.BeforeDelimiter(_, \",\"), type text}}),",
+                "    #\"Linhas em Branco Removidas\" = Table.SelectRows(#\"Texto Extraído Antes do Delimitador\", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {\"\", null}))),",
+                "    #\"Erros Removidos\" = Table.RemoveRowsWithErrors(#\"Linhas em Branco Removidas\", {\"avaliação_imdb\"}),",
+                "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Erros Removidos\",{{\"ano\", \"Ano\"}, {\"duração\", \"Duração\"}, {\"classificacao_idade\", \"Classificacao_Idade\"}, {\"avaliação_imdb\", \"Avaliação_imdb\"}, {\"orçamento\", \"Orçamento\"}, {\"receita_bruta_mundial\", \"Receita_bruta_mundial\"}, {\"receita_eua_canada\", \"Receita_eua_canada\"}, {\"diretor\", \"Diretor\"}, {\"roteirista\", \"Roteirista\"}, {\"ator_principal\", \"Ator_principal\"}, {\"genero\", \"Genero\"}, {\"pais_origem\", \"Pais_origem\"}, {\"local_filmagem\", \"Local_filmagem\"}, {\"produtora\", \"Produtora\"}, {\"idioma\", \"Idioma\"}, {\"indicacoes\", \"Indicacoes\"}, {\"oscar\", \"Oscar\"}}),",
+                "    #\"Texto Inserido Antes do Delimitador\" = Table.AddColumn(#\"Colunas Renomeadas1\", \"Texto Antes do Delimitador\", each Text.BeforeDelimiter([Duração], \"h\"), type text),",
+                "    #\"Colunas Renomeadas2\" = Table.RenameColumns(#\"Texto Inserido Antes do Delimitador\",{{\"Texto Antes do Delimitador\", \"Horas\"}}),",
+                "    #\"Tipo Alterado3\" = Table.TransformColumnTypes(#\"Colunas Renomeadas2\",{{\"Horas\", Int64.Type}}),",
+                "    #\"Erros Removidos1\" = Table.RemoveRowsWithErrors(#\"Tipo Alterado3\", {\"Horas\"}),",
+                "    #\"Texto Inserido Entre os Delimitadores\" = Table.AddColumn(#\"Erros Removidos1\", \"Texto Entre os Delimitadores\", each Text.BetweenDelimiters([Duração], \" \", \"m\"), type text),",
+                "    #\"Colunas Renomeadas3\" = Table.RenameColumns(#\"Texto Inserido Entre os Delimitadores\",{{\"Texto Entre os Delimitadores\", \"Minutos\"}}),",
+                "    #\"Tipo Alterado4\" = Table.TransformColumnTypes(#\"Colunas Renomeadas3\",{{\"Minutos\", Int64.Type}}),",
+                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Tipo Alterado4\", \"Personalizar\", each ([Horas]*60)+[Minutos]),",
+                "    #\"Colunas Renomeadas4\" = Table.RenameColumns(#\"Personalização Adicionada\",{{\"Personalizar\", \"duracao em minutos (total)\"}}),",
+                "    #\"Colunas Removidas2\" = Table.RemoveColumns(#\"Colunas Renomeadas4\",{\"Minutos\", \"Horas\", \"Duração\"}),",
+                "    #\"Colunas Reordenadas\" = Table.ReorderColumns(#\"Colunas Removidas2\",{\"id\", \"título\", \"Ano\", \"Classificacao_Idade\", \"Avaliação_imdb\", \"voto\", \"Orçamento\", \"Receita_bruta_mundial\", \"Receita_eua_canada\", \"Diretor\", \"Roteirista\", \"Ator_principal\", \"Genero\", \"duracao em minutos (total)\", \"Pais_origem\", \"Local_filmagem\", \"Produtora\", \"Idioma\", \"Indicacoes\", \"Oscar\"}),",
+                "    #\"Valor Substituído\" = Table.ReplaceValue(#\"Colunas Reordenadas\",\"\",\"Desconhecido\",Replacer.ReplaceValue,{\"Local_filmagem\"})",
+                "in",
+                "    #\"Valor Substituído\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_200e31f0-ee15-42ae-a4f0-048366412320",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "867e3f07-0e87-4faa-b844-12c993f071f9",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a30cd0b9-7105-40a9-a4bd-44dd4ba33fb3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "37c84497-a1af-417e-a44b-5f9f02db590e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c30b79a8-ec9b-4a7d-9c2b-4efdb7a80350",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "77d82762-668e-4c1d-98f3-af6252cc1fa3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "6d756b5a-4e02-4af6-8cd8-3cbf2b8764ab",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0dad6df1-b779-44e9-a66d-b51e74ba16a6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "d49d2332-855a-4d93-ab52-e5edca492197",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "ab569505-7d37-4f81-bc47-33e248a296bf",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "d79eecd1-10f2-446c-8a4b-6293da227a7a",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "1dbd35bb-f965-4497-b56a-6260f85a6939",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "7d1facf4-7ebf-4b29-aa9f-125c8fa0145d"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "93320757-2663-4763-9964-9136297f01fa",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_200e31f0-ee15-42ae-a4f0-048366412320",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "c3999c88a6ea4e5eb00930a8bbfa1936"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "ea307583-d3b5-4a1d-b691-350e2fd9cb1e",
+            "sourceColumn": "[Value]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "ee95a541-291d-4565-96b8-c79077f7210b",
+        "measures": [
+          {
+            "name": "Qtd. Filmes",
+            "expression": "COUNT(imdb_movies[id])",
+            "formatString": "0",
+            "lineageTag": "709adc16-3e64-4357-837a-2f2cc7b35df3"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": "{BLANK()}",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

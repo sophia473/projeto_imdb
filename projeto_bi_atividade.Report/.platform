@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "projeto_bi_atividade"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ad808cf2-e201-438b-80ff-cf1b4a1c6100"
+  }
+}

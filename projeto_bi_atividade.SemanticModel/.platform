@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "projeto_bi_atividade"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "75961764-4c52-4089-806a-344a2b91cf27"
+  }
+}
