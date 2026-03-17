@@ -53,19 +53,6 @@
         ],
         "columns": [
           {
-            "name": "id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0910ddfd-433d-410f-b976-c5b98323b42d",
-            "sourceColumn": "id",
-            "summarizeBy": "none"
-          },
-          {
             "name": "título",
             "annotations": [
               {
@@ -333,6 +320,19 @@
             "summarizeBy": "sum"
           },
           {
+            "name": "id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "acb411d6-78ca-4470-b1f3-345c6ef5e308",
+            "sourceColumn": "id",
+            "summarizeBy": "none"
+          },
+          {
             "name": "Status de Crítica",
             "annotations": [
               {
@@ -350,7 +350,7 @@
               ")"
             ],
             "isDataTypeInferred": true,
-            "lineageTag": "ad2d36bd-5959-4739-8d15-1b7c96682995",
+            "lineageTag": "12618229-dba4-4b42-99d1-c2927f543dae",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -612,7 +612,7 @@
         ]
       },
       {
-        "name": "Medidas",
+        "name": "Lucro ou Prejuizo",
         "annotations": [
           {
             "name": "PBI_Id",
@@ -646,14 +646,55 @@
             "expression": "COUNT(imdb_movies[id])",
             "formatString": "0",
             "lineageTag": "709adc16-3e64-4357-837a-2f2cc7b35df3"
+          },
+          {
+            "name": "contagem de filme",
+            "expression": "DISTINCTCOUNT(imdb_movies[id])",
+            "formatString": "0",
+            "lineageTag": "df262b79-b297-42fc-9608-abf4b609d0c3"
+          },
+          {
+            "name": "lucro total",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "SUMX(imdb_movies, imdb_movies[Receita_bruta_mundial] - imdb_movies[Orçamento])",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "e371a89f-515d-4b91-ad30-198cc9e426ee"
+          },
+          {
+            "name": "medias_notas_2000",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "CALCULATE(AVERAGE('imdb_movies'[Avaliação_imdb]), 'imdb_movies'[Ano] >= 2000)",
+            "lineageTag": "de002396-5a6c-4673-84c9-3360deb99549"
+          },
+          {
+            "name": "margem",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "SUM(imdb_movies[Receita_bruta_mundial])",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "1c43b7de-c660-43a5-b908-5deddb1f263e"
           }
         ],
         "partitions": [
           {
-            "name": "Medidas",
+            "name": "Lucro ou Prejuizo",
             "mode": "import",
             "source": {
-              "expression": "{BLANK()}",
+              "expression": "SUMX(imdb_movies, imdb_movies[Receita_bruta_mundial] - imdb_movies[Orçamento])",
               "type": "calculated"
             }
           }
