@@ -15,8 +15,8 @@ O projeto utiliza dados do IMDB para realizar análises de performance cinematog
 
 ## Perguntas de Negócio
 Para orientar a análise, foram definidas as seguintes perguntas:
-1. **Pergunta 1:** [Insira aqui a primeira pergunta que você criou, ex: Filmes italianos dão lucro ou prejuízo?]
-2. **Pergunta 2:** [Insira aqui a segunda pergunta que você criou, ex: Existe relação entre nota alta e Oscars?]
+1. **Pergunta 1:** Existe uma correlação direta entre o investimento (budget) e a margem de lucro nos títulos de maior arrecadação?
+2. **Pergunta 2:** Quais são os diretores que conseguem manter o melhor desempenho de engajamento (votos/avaliações) no IMDB dentro do volume total de filmes?
 
 ---
 
